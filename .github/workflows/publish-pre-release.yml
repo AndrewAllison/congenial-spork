@@ -3,7 +3,7 @@ name: PreRelease & Publish
 on:
   push:
     branches:
-      - 'features/**'
+      - 'feature/**'
 
 jobs:
   release:
@@ -37,7 +37,7 @@ jobs:
       - name: Build
         run: npm run build
       - name: Version Bump
-        run: npm run version:prerelease
+        run: npm version prerelease --preid=${GITHUB_REF##*/}
       - name: Publish to npm
         run: npm publish --access public
         env:
