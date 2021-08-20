@@ -1,3 +1,3 @@
 import { Num } from './Num'
-
-export { Num }
+import { compare } from './array-functions'
+export { Num, compare }

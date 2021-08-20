@@ -1,7 +1,7 @@
 {
-  "name": "example-typescript-package",
+  "name": "congenial-spork",
   "version": "0.2.1",
-  "description": "",
+  "description": "A little bit of a useful library and experiment. It will not only provide me with a few tools but a meands of learning how to create this kinda thing. Please be careful using it in production.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "umd:main": "dist/umd/index.js",
@@ -17,7 +17,8 @@
     "package": "npm run build && npm pack",
     "test": "jest --no-cache --runInBand",
     "test:cov": "jest --coverage --no-cache --runInBand",
-    "addscope": "node tools/packagejson name @tomchen/example-typescript-package"
+    "addscope": "node tools/packagejson name @AndrewAllison/congenial-spork",
+    "postversion": "git push --follow-tags"
   },
   "publishConfig": {
     "access": "public"
@@ -25,46 +26,41 @@
   "files": [
     "dist"
   ],
-  "keywords": [
-    "example",
-    "typescript",
-    "npm",
-    "package",
-    "sample",
-    "boilerplate",
-    "starter",
-    "demo",
-    "cjs",
-    "esm",
-    "umd"
-  ],
-  "author": "Tom Chen <tomchen.org@gmail.com>",
+  "keywords": [],
+  "author": "Andrew Allison <andrew.allison@digitalinfamy.com>",
   "license": "MIT",
-  "homepage": "https://github.com/tomchen/example-typescript-package",
+  "homepage": "https://github.com/AndrewAllison/congenial-spork",
   "repository": {
     "type": "git",
-    "url": "git@github.com:tomchen/example-typescript-package.git"
+    "url": "git@github.com:AndrewAllison/congenial-spork.git"
   },
   "bugs": {
-    "url": "https://github.com/tomchen/example-typescript-package/issues"
+    "url": "https://github.com/AndrewAllison/congenial-spork/issues"
   },
   "dependencies": {},
   "devDependencies": {
-    "@commitlint/cli": "^11.0.0",
-    "@commitlint/config-conventional": "^11.0.0",
-    "@types/jest": "^26.0.20",
-    "@typescript-eslint/eslint-plugin": "^4.15.0",
-    "@typescript-eslint/parser": "^4.15.0",
-    "eslint": "^7.19.0",
-    "eslint-config-prettier": "^7.2.0",
-    "eslint-plugin-prettier": "^3.3.1",
-    "husky": "^5.0.9",
-    "jest": "^26.6.3",
-    "prettier": "^2.2.1",
-    "ts-jest": "^26.5.0",
-    "ts-loader": "^8.0.16",
-    "typescript": "^4.1.3",
-    "webpack": "^5.21.2",
-    "webpack-cli": "^4.5.0"
+    "@commitlint/cli": "11.0.0",
+    "@commitlint/config-conventional": "11.0.0",
+    "@types/jest": "26.0.20",
+    "@typescript-eslint/eslint-plugin": "4.15.0",
+    "@typescript-eslint/parser": "4.15.0",
+    "commitizen": "4.2.4",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "7.19.0",
+    "eslint-config-prettier": "7.2.0",
+    "eslint-plugin-prettier": "3.3.1",
+    "husky": "5.0.9",
+    "jest": "26.6.3",
+    "prettier": "2.2.1",
+    "ts-jest": "26.5.0",
+    "ts-loader": "8.0.16",
+    "typescript": "4.1.3",
+    "webpack": "5.21.2",
+    "webpack-cli": "4.5.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
