@@ -1,3 +1,8 @@
+## [0.2.4-valid-until.2](https://github.com/AndrewAllison/congenial-spork/compare/v0.2.4-valid-until.1...v0.2.4-valid-until.2) (2021-08-20)
+
+
+
+
 ## [0.2.4-valid-until.1](https://github.com/AndrewAllison/congenial-spork/compare/v0.2.4-valid-until.0...v0.2.4-valid-until.1) (2021-08-20)
 
 
