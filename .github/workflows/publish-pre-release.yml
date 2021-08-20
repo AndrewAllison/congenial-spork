@@ -2,10 +2,10 @@ name: Release & Publish
 
 on:
   push:
+    # Sequence of patterns matched against refs/heads
     branches:
-      - 'feature/**'
-    tags:
-      - 'v*'
+      # Push events to branches matching refs/heads/releases/10
+      - 'features/**'
 
 jobs:
   release:
