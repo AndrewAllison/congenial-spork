@@ -1,4 +1,4 @@
-import { compare } from '../src';
+import { compare } from './compare';
 
 describe('array-functions', () => {
   it('should sort and array', () => {
