@@ -1,6 +1,6 @@
 {
   "name": "congenial-spork",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "A little bit of a useful library and experiment. It will not only provide me with a few tools but a meands of learning how to create this kinda thing. Please be careful using it in production.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -37,8 +37,7 @@
   "bugs": {
     "url": "https://github.com/AndrewAllison/congenial-spork/issues"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "11.0.0",
     "@commitlint/config-conventional": "11.0.0",
