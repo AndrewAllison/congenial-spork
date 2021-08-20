@@ -19,6 +19,7 @@
     "test:cov": "jest --coverage --no-cache --runInBand",
     "addscope": "node tools/packagejson name @AndrewAllison/congenial-spork",
     "version": "conventional-changelog -p eslint -i CHANGELOG.md -s && git add CHANGELOG.md && git commit -m \"chore(changelog): the changelog was updated\"",
+    "version:prerelease": "npm version prerelease --preid=alpha",
     "postversion": "git push --follow-tags"
   },
   "publishConfig": {
