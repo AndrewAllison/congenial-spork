@@ -3,7 +3,7 @@ name: PreRelease & Publish
 on:
   push:
     branches:
-      - 'feature/**'
+      - next
 
 jobs:
   release:
