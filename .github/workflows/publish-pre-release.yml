@@ -1,11 +1,9 @@
-name: Release & Publish
+name: PreRelease & Publish
 
 on:
   push:
     branches:
       - 'feature/**'
-    tags:
-      - 'v*'
 
 jobs:
   release:
@@ -38,8 +36,6 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-      - name: Version Bump
-        - run: npm run version:prerelease
       - name: Publish to npm
         run: npm publish --access public
         env:
