@@ -3,17 +3,22 @@ name: Releave next version
 on:
   push:
     branches:
+      - master
       - next
+      - beta
+      - "*.x"
 
 jobs:
   release:
-    name: Release
+    name: release
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Install modules
-        run: npm install
-      - name: Build
-        run: npm run build
-      - name: version
-        run: npm run semantic-release
+      - uses: actions/setup-node@v2
+        with:
+          cache: npm
+      - run: npm ci
+      - run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
