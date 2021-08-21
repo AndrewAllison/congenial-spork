@@ -6,12 +6,14 @@ on:
       - next
 
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v2
-    - name: Install modules
-      run: npm install
-    - name: Build
-      run: npm run build
-    - name: version
-      run: npm run semantic-release
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install modules
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: version
+        run: npm run semantic-release
