@@ -1,12 +1,11 @@
-name: Releave next version
-
+name: Release
 on:
   push:
     branches:
       - master
       - next
       - beta
-      - "*.x"
+      - "*.x" # maintenance releases branches
 
 jobs:
   release:
