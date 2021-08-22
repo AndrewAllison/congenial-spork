@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/AndrewAllison/congenial-spork/compare/v1.0.0...v1.1.0) (2021-08-22)
+
+
+### Bug Fixes
+
+* **ci:** fix issue with semantic script ([d77300c](https://github.com/AndrewAllison/congenial-spork/commit/d77300cedc9f57e3b7139dbb2df0cbf6960f7707))
+
+
+### Features
+
+* **add:** re introduce the add feature to see what the crack is ([6a15e6e](https://github.com/AndrewAllison/congenial-spork/commit/6a15e6e109db667fe8b55fae80ae97a6096c1a3a))
+
 # [1.1.0-beta.2](https://github.com/AndrewAllison/congenial-spork/compare/v1.1.0-beta.1...v1.1.0-beta.2) (2021-08-22)
 
 
