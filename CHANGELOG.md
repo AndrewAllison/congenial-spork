@@ -1,3 +1,10 @@
+# [1.1.0-beta.2](https://github.com/AndrewAllison/congenial-spork/compare/v1.1.0-beta.1...v1.1.0-beta.2) (2021-08-22)
+
+
+### Bug Fixes
+
+* **ci:** fix issue with semantic script ([d77300c](https://github.com/AndrewAllison/congenial-spork/commit/d77300cedc9f57e3b7139dbb2df0cbf6960f7707))
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
