@@ -40,10 +40,10 @@
     "url": "https://github.com/AndrewAllison/congenial-spork/issues"
   },
   "dependencies": {
-    "luxon": "2.0.2"
+    "luxon": "2.5.2"
   },
   "peerDependencies": {
-    "luxon": "2.0.2"
+    "luxon": "2.5.2"
   },
   "devDependencies": {
     "@commitlint/cli": "11.0.0",
